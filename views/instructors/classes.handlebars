@@ -1,0 +1,23 @@
+
+<h2>{{instructor.first_name}}'x Classes</h2>
+
+<table cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>class Id</th>
+            <th>class name</th>
+            <th></th>
+                <th></th></tr>
+        </thead>
+        <tbody>
+            {{#each instructor.classes}}
+            <tr>
+                <td>{{class_id}}</td>
+                <td>{{class_title}}</td>
+                <td><a href="/classes/{{class_id}}/lessons">View lessons  </a></td>
+                 <td><a href="/instructors/classes/{{class_id}}/lessons/new">Add lessons  </a></td>
+            </tr>
+            {{/each}}
+            </tbody></table>
+
+          
